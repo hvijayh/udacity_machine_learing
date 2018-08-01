@@ -11815,7 +11815,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11851,32 +11851,8 @@ div#notebook {
 <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/Users/hvijayh/.pyenv/versions/3.5.1/envs/projectValMachEnv/lib/python3.5/site-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
-  &#34;This module will be removed in 0.20.&#34;, DeprecationWarning)
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Boston housing dataset has 489 data points with 4 variables each.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/Users/hvijayh/.pyenv/versions/3.5.1/envs/projectValMachEnv/lib/python3.5/site-packages/sklearn/learning_curve.py:22: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the functions are moved. This module will be removed in 0.20
-  DeprecationWarning)
 </pre>
 </div>
 </div>
@@ -12001,23 +11977,23 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Minimum price of the data</span>
-<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Maximum price of the data</span>
-<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Mean price of the data</span>
-<span class="n">mean_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">mean_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Median price of the data</span>
-<span class="n">median_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">median_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Standard deviation of prices of the data</span>
-<span class="n">std_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">std_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># Show the calculated statistics</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Statistics for Boston housing dataset:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -12048,7 +12024,7 @@ Minimum price: $105000.0
 Maximum price: $1024800.0
 Mean price: $454342.9447852761
 Median price $438900.0
-Standard deviation of prices: $165340.27765266784
+Standard deviation of prices: $165171.13154429474
 </pre>
 </div>
 </div>
@@ -12117,7 +12093,7 @@ Standard deviation of prices: $165340.27765266784
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Import &#39;r2_score&#39;</span>
@@ -12260,7 +12236,7 @@ Standard deviation of prices: $165340.27765266784
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -12481,7 +12457,7 @@ Think about the pros and cons of adding more training points based on if the tra
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>1) The model trained with a maximum depth of 1 suffers from high bias i.e underfitting. This can be deduced from the fact that the validation score is quite low. Also, we see that the model gets better with better validation scores as the maximum depth increase upto around a depth of 4.</p>
+<p>1) The model trained with a maximum depth of 1 suffers from high bias i.e underfitting. This can be deduced from the fact that <strong>the validation score is quite low along with the training score being low as well</strong>. Also, we see that the model gets better with better validation scores as the maximum depth increase upto around a depth of 4.</p>
 <p>2) The model trained with a maximum depth of 10 suffers from high variance i.e overfitting. We see that the model performs very well on the training data whereas it shows poor performance on the validation data.</p>
 
 </div>
@@ -12538,8 +12514,8 @@ Think about the pros and cons of adding more training points based on if the tra
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Grid search technique is the brute force process of finding the most optimal set of a parameters for a given model. This technique builds a model for each combination of the given parameters and returns the model with the best performance.</p>
-<p>Although building all possible models for a given set of parameters is computationally expensive, current advances in parallel processing has made it acceptable in certain scenarios. The 'grid' in this technique correspond to the parameters to be used to explore multiple models.</p>
+<p>Grid search technique is the brute force process of finding the most optimal set of a parameters for a given model from a given set of parameter values. By using a dictionary of parameters with a finite list values for each parameter and a performance metric, this technique builds a model for each combination of the given parameter values and returns the model with the best performance.</p>
+<p>Although building all possible models from a given set of parameters is computationally expensive, current advances in parallel processing has made it acceptable in certain scenarios. The 'grid' in this technique correspond to the grid of parameter combinations used as input to explore the models.</p>
 <p>For example, a decision tree classifier can be used in this technique where parameters like maximum depth of the tree and maximum number of leaves required to create a split can be used to identify the best model.</p>
 
 </div>
@@ -12566,7 +12542,7 @@ Think about the pros and cons of adding more training points based on if the tra
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>In the K-fold cross validation technique, the training set is divided into k parts out of which one will be used for validating the model while the other k-1 parts will be used to train it. In this technique, each of the k parts get a chance to be the validation set and hence, there will be k training iterations.</p>
+<p>In the K-fold cross validation technique, the training set is divided into k parts out of which one will be used for validating the model while the other k-1 parts will be used to train it. In this technique, each of the k parts get a chance to be the validation set and hence, there will be k training iterations. The average of the cross validation scores obtained over these k iterations is used to determine the performance of the model.</p>
 <p>When using grid search technique without k-fold cross validation, the models are created using the same training and validation set. However, with k-fold cross validation, the variation in the validation set minimizes the selection bias of the dataset and hence comes up with a more generic optimal model.</p>
 
 </div>
@@ -12603,7 +12579,7 @@ For the <code>fit_model</code> function in the code cell below, you will need to
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeRegressor</span>
@@ -12631,7 +12607,7 @@ For the <code>fit_model</code> function in the code cell below, you will need to
     <span class="c1"># TODO: Create the grid search cv object --&gt; GridSearchCV()</span>
     <span class="c1"># Make sure to include the right parameters in the object:</span>
     <span class="c1"># (estimator, param_grid, scoring, cv) which have values &#39;regressor&#39;, &#39;params&#39;, &#39;scoring_fnc&#39;, and &#39;cv_sets&#39; respectively.</span>
-    <span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">regressor</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="n">scoring_fnc</span><span class="p">)</span>
+    <span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">regressor</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">cv_sets</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="n">scoring_fnc</span><span class="p">)</span>
 
     <span class="c1"># Fit the grid search object to the data to compute the optimal model</span>
     <span class="n">grid</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -12641,6 +12617,25 @@ For the <code>fit_model</code> function in the code cell below, you will need to
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/hvijayh/.pyenv/versions/3.5.1/envs/projectValMachEnv/lib/python3.5/site-packages/sklearn/grid_search.py:42: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. This module will be removed in 0.20.
+  DeprecationWarning)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12692,7 +12687,7 @@ For the <code>fit_model</code> function in the code cell below, you will need to
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Parameter &#39;max_depth&#39; is 5 for the optimal model.
+<pre>Parameter &#39;max_depth&#39; is 4 for the optimal model.
 </pre>
 </div>
 </div>
@@ -12707,7 +12702,7 @@ For the <code>fit_model</code> function in the code cell below, you will need to
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong> Hint: </strong> The answer comes from the output of the code snipped above.</p>
 <p><strong>Answer: </strong></p>
-<p>The model has an optimal maximum depth of 5. The maximum depth guessed in Question 6 was 4 which was based on preventing overfitting. However, that intuitive guess seems to be a bit too premature.</p>
+<p>The model has an optimal maximum depth of 4. The maximum depth guessed in Question 6 was 4 which was based on preventing overfitting and seems accurate.</p>
 
 </div>
 </div>
@@ -12801,8 +12796,10 @@ Predicted selling price for Client 3&#39;s home: $856,800.00
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>I would recommend the selling prices predicted above to the first two clients. The price of the first house is within one standard deviation from the mean whereas the price of the second house is within two standard deviations from the mean.</p>
-<p>However, the third house seems to be significantly above two standard deviations from the mean which could either indicate discrepancies due to some outliner data or there might more factors affecting the selling price of the house. Although the high price of client 3's house makes sense due to good feature values, the actual price might be slightly inaccurate from the predicted price.</p>
+<p>When compared with the statistics determined on the housing dataset during the initial data exploration, the house prices for client 1 and client 2 fall within 2 standard deviations from the mean which seems reasonable.</p>
+<p>Client 1 has high neighborhood poverty level and a high student-teacher ratio of nearby schools which negatively correlate to the price of the house and hence it is within a standard deviation below the mean.</p>
+<p>Client 2 has a much higher neighborhood poverty level and higher student-teacher ratio of nearby schools when compared to client 1's neighborhood. Therefore, the selling price is within 2nd standard deviation below the mean and lower than client 1's house.</p>
+<p>Client 3 has a low neighborhood poverty level and low student-teacher ratio which increase the price of the house. Also, the number of rooms go up to 8 for client 3 which positively correlates to the price of the house. Hence, the high predicted selling price of the house which is close to double the mean of the dataset is acceptable.</p>
 
 </div>
 </div>
